@@ -1,0 +1,63 @@
+&CONTROL
+calculation = 'relax'
+nstep = 100
+outdir = './out/'
+prefix = 'aiida'
+pseudo_dir = 'D:/sssp/'
+restart_mode = 'from_scratch'
+wf_collect = .TRUE.
+/
+
+&SYSTEM
+degauss = 0.002
+ecutwfc = 30
+ibrav = 0
+nat = 14
+ntyp = 3
+occupations = 'smearing'
+/
+
+&ELECTRONS
+electron_maxstep = 100
+mixing_beta = 0.5
+scf_must_converge = .FALSE.
+/
+
+&IONS
+ion_dynamics = 'bfgs'
+upscale = 10
+/
+
+&CELL
+cell_dofree = '2Dxy'
+cell_dynamics = 'bfgs'
+/
+
+ATOMIC_SPECIES
+Ti 47.9 ti_pbe_v1.4.uspp.F.UPF
+C 12.011 C.pbe-n-kjpaw_psl.1.0.0.UPF
+F 18.998403 F.oncvpsp.upf
+
+K_POINTS {automatic}
+5 5 1 0 0 0
+
+CELL_PARAMETERS (angstrom)
+  -1.517339868  -2.358079714   0.000000000
+  -1.283382760   2.493115269   0.000000000
+   0.000000000   0.000000000 -15.117150000
+
+ATOMIC_POSITIONS (angstrom)
+Ti       0.725670121   0.485759536   0.005947107
+Ti      -0.714409944  -0.255292365  -7.489895689
+Ti      -0.713553396  -0.254873494  -2.131971386
+Ti      -2.076059613   0.621236072  -9.618054260
+Ti      -0.636408568   1.361370712 -12.973088063
+Ti      -2.154071171  -0.995858032  -5.375063468
+C       -0.635556396   1.362182531  -1.132554498
+C       -2.153938595  -0.996367538  -8.564671481
+C       -2.075992037   0.621110513  -6.368930400
+C       -0.713873204  -0.255705127 -14.032150022
+F       -0.715340443  -0.255268686 -11.873722420
+F       -0.713561952  -0.254500290  -4.335776472
+F       -2.154004665  -0.995155339 -10.725421395
+F       -2.075196407   0.621669357  -3.162373752
