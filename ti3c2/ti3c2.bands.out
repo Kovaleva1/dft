@@ -1,5 +1,5 @@
 ﻿
-     Program PWSCF v.6.4.1 starts on  20May2024 at 17:25:43 
+     Program PWSCF v.6.4.1 starts on  22May2024 at 17:25:43 
 
      This program is part of the open-source Quantum ESPRESSO suite
      for quantum simulation of materials; please cite
@@ -1169,7 +1169,7 @@
      PWSCF        :   7m30.39s CPU   2m15.80s WALL
 
 
-   This run was terminated on:  17:27:59   20May2024            
+   This run was terminated on:  17:27:59   22May2024            
 
 =------------------------------------------------------------------------------=
    JOB DONE.
