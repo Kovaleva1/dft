@@ -1,0 +1,5 @@
+&PROJWFC
+  prefix = 'aiida'
+  outdir = './out/'
+  filpdos= 'pdos.dat'
+/

@@ -1,0 +1,8 @@
+$DOS
+outdir = './out/'
+prefix = 'aiida'
+Emin=-20
+Emax=40
+DeltaE=0.05
+fildos='ti3c2.dos'
+/

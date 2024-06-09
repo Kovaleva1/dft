@@ -1,0 +1,54 @@
+&CONTROL
+calculation = 'bands'
+outdir = './out/'
+prefix = 'aiida'
+pseudo_dir = 'D:/sssp/'
+restart_mode = 'from_scratch'
+wf_collect = .TRUE.
+verbosity = 'high'
+/
+
+&SYSTEM
+degauss = 0.002
+ecutwfc = 30
+ibrav = 0
+nat = 10
+nbnd = 53
+nosym = .TRUE.
+ntyp = 2
+occupations = 'smearing'
+/
+
+&ELECTRONS
+electron_maxstep = 100
+mixing_beta = 0.5
+scf_must_converge = .TRUE.
+/
+
+ATOMIC_SPECIES
+Ti 47.9 ti_pbe_v1.4.uspp.F.UPF
+C 12.011 C.pbe-n-kjpaw_psl.1.0.0.UPF
+
+K_POINTS {crystal_b}
+4
+  0.0000 0.0000 0.0000 20 !Gamma
+  0.5000 0.0000 0.0000 30 !M
+  0.3333 0.3333 0.0000 10 !K
+  0.0000 0.0000 0.0000 20 !Gamma
+
+CELL_PARAMETERS (angstrom)
+   3.091917502  -0.000000006   0.000000000
+  -1.545958081   2.677679489   0.000000000
+   0.000000000   0.000000000  15.117150070
+
+ATOMIC_POSITIONS (angstrom)
+Ti       1.545960520   0.892558933   5.220817950
+Ti      -0.000001100   1.785120550  12.779457834
+Ti      -0.000001100   1.785120550   9.896332120
+Ti       1.545960520   0.892558933   2.337692236
+Ti       0.000000000   0.000000000   7.558575035
+Ti       0.000000000   0.000000000   0.000000000
+C       -0.000001100   1.785120550   6.267009340
+C        1.545960520   0.892558933  13.825577576
+C       -0.000001100   1.785120550   1.291572494
+C        1.545960520   0.892558933   8.850140730
